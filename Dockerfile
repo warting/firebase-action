@@ -22,5 +22,6 @@ COPY license.md readme.md /
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 RUN npm i -g firebase-tools
+RUN npm i -g eslint
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["--help"]
