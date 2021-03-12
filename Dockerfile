@@ -1,4 +1,4 @@
-FROM andreysenov:firebase-tools
+FROM andreysenov/firebase-tools
 
 LABEL "name"="firebase"
 LABEL "version"="1.0.7"
