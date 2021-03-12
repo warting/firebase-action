@@ -15,5 +15,6 @@ USER root
 COPY license.md readme.md /
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
+USER node
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["--help"]
