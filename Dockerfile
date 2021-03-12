@@ -23,6 +23,7 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 RUN npm i -g firebase-tools
 RUN npm i -g eslint
+RUN npm install -g typescript
 RUN npm i -g eslint-plugin-import@latest
 
 ENTRYPOINT ["/entrypoint.sh"]
