@@ -11,7 +11,7 @@ An example step you can add to your workflow which deploys to Firebase:
 ```yml
 - name: Firebase GitHub Action
   uses: pizzafox/firebase-action@1.0.7
-  env:
+  env:z
     PROJECT_ID: "google-cloud-or-firebase-project-id"
     FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
   with:
