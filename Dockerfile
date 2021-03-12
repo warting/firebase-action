@@ -16,6 +16,6 @@ COPY license.md readme.md /
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 RUN npm install -g typescript
-RUN npm install eslint --save-dev
+RUN npm install -g eslint
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["--help"]
