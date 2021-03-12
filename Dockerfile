@@ -11,7 +11,7 @@ LABEL "com.github.actions.color"="orange"
 
 LABEL "repository"="https://github.com/pizzafox/firebase-action"
 LABEL "homepage"="https://github.com/pizzafox/firebase-action"
-
+USER root
 COPY license.md readme.md /
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
