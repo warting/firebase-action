@@ -1,5 +1,11 @@
 FROM node:lts-slim
 
+RUN apt-get update || : && apt-get install -y \
+    python \
+    build-essential
+
+CMD ["node"]
+
 LABEL "name"="firebase"
 LABEL "version"="1.0.7"
 LABEL "maintainer"="Jonah Snider <me@jonahsnider.ninja> (jonahsnider.ninja)"
